@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Vue-Dischi</title>
+</head>
+<body>
+    <div id="app">
+            <header>
+                
+                <div class="container_header">
+                    <div class="container-left">
+                        <img src="https://qph.cf2.quoracdn.net/main-qimg-26b35be139dd768190b8ac56beae7086" alt="logo"/>
+                    </div>
+
+                </div> 
+            
+
+            </header>
+        <main>
+            <div class="container-card">
+                    <!---->
+                    
+                    <!---->
+                <div class="card" v-for="(disco,indice) in dischi">
+                        <img class="poster" :src="disco.poster" alt="">
+                        <h3>{{disco.title}}</h3>
+                        <span>{{disco.author}}</span>
+                        <strong><span>{{disco.year}}</span></strong>  
+                    </div>
+                
+        
+                
+                </div>
+            
+        </main>
+      </div>
+    
+     
+    
+    
+    
+    
+    
+    
+    
+   
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script> 
+</body>
+
+</html>
